@@ -6,23 +6,15 @@ html, body {
     color: white;
 }
 
-.menuLink {
-    text-decoration: none;
-    color: white;
-}
-
-#navigationBarContainer {
-    display: table;
-    width: 100%;
-}
-
 #navigationBar {
     background-color: black;
-    color: white;
     height: 50px;
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
+}
+
+.navigationBarLink {
+    text-decoration: none;
+    color: white;
 }
 
 #mainTable tr {

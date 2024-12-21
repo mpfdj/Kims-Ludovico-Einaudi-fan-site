@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+    color: white;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: white;
+}
+
+#navigationBarContainer {
+    display: table;
+    width: 100%;
+}
+
+#navigationBar {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#mainTable tr {
+    vertical-align: top;
+}
+
+#mainTable td {
+    padding: 5px;
+}
+
+.collectionImage {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 300px;
+}
+
+.collectionImage:hover {
+    opacity: 0.7;
+}

@@ -1,0 +1,39 @@
+.header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, serif;
+    /*background-color: black;*/
+    /*color: white;*/
+}
+
+
+.menu {
+    color: white;
+}
+
+.menuItem {
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    color: #808080	;
+}
+
+.menuItem:focus {
+    color: #808080	;
+    text-decoration: underline;
+}
+
+.menuItem.visited {
+    color: #808080	;
+    text-decoration: underline;
+}

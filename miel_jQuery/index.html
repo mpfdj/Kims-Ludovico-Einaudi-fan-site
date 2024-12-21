@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kim's Ludovico Einaudi fan site</title>
+</head>
+<body></body>
+<div class="header">
+<!--    <h1><span class="menu"><a id="link1" class="menuItem" href="#">Bio</a> | <a id="link2" class="menuItem" href="#">Early life and education</a> | <a id="link3" class="menuItem" href="#">Music career</a></span></h1>-->
+    <h1>
+        <span class="menu">
+            <a id="link1" class="menuItem" href="#">Bio</a> |
+            <a id="link2" class="menuItem" href="#">Collections</a>
+        </span>
+    </h1>
+</div>
+
+
+<div id="main"></div>
+
+
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        loadDefault();
+
+        function setMenuItemToNone() {
+            let mi = $(".menuItem");
+            mi.css("text-decoration", "none");
+            mi.css("color", "white");
+        }
+
+        function setMenuItemToActive(mi) {
+            $(mi).css("text-decoration", "underline");
+            $(mi).css("color", "#808080");
+        }
+
+        function loadDefault() {
+            load1();
+            let l = $("#link1");
+            l.css("text-decoration", "underline");
+            l.css("color", "#808080");
+        }
+
+        function load1() {
+            setMenuItemToNone();
+            setMenuItemToActive(this);
+            $("#main").load("html/bio-short.html");
+        }
+
+        function load2() {
+            setMenuItemToNone();
+            setMenuItemToActive(this);
+            // $("#main").load("html/early-life-and-education.html");
+            $("#main").load("html/collections.html");
+        }
+
+        function load3() {
+            setMenuItemToNone();
+            setMenuItemToActive(this);
+            $("#main").load("html/music-career.html");
+        }
+
+        $("#link1").click(load1);
+        $("#link2").click(load2);
+        $("#link3").click(load3);
+
+
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<style>
+    img {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    img:hover {
+        opacity: 0.7;
+    }
+
+</style>
+<!--<a id="link1" class="menuItem" href="#">Bio</a> |-->
+
+<!--<a id="linkIATL_SE" href="html/recordings/in-a-time-lapse-special-edition.html" ><img src="images/recordings/IATL_SE.jpeg"></a>-->
+<a id="linkIATL_SE" ><img src="images/recordings/IATL_SE.jpeg"></a>
+<img src="images/recordings/undiscovered_2.jpeg">
+<img src="images/recordings/cinema.png">
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        function load1() {
+            $("#main").load("html/recordings/in-a-time-lapse-special-edition.html");
+        }
+
+        $("#linkIATL_SE").click(load1);
+
+
+    });
+
+</script>

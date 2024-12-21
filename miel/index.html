@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kim's Ludovico Einaudi fan site</title>
+</head>
+<body></body>
+<div class="header">
+    <h1>
+        <span class="menu">
+            <a id="link1" class="menuItem" href="#" onclick="loadPage('bio-short.html')">Bio</a> |
+            <a id="link2" class="menuItem" href="#" onclick="loadPage('early-life-and-education.html')">Early life and education</a> |
+            <a id="link3" class="menuItem" href="#" onclick="loadPage('music-career.html')">Music career</a> |
+            <a id="link4" class="menuItem" href="#" onclick="loadPage('collections.html')">Collections</a>
+        </span>
+    </h1>
+</div>
+
+
+<div id="main"></div>
+
+
+<script type="text/javascript">
+    async function fetchHtmlAsText(url) {
+        const response = await fetch(url);
+        return await response.text();
+    }
+
+    async function loadPage(page) {
+        let url = "html/" + page;
+        const contentDiv = document.getElementById("main");
+        contentDiv.innerHTML = await fetchHtmlAsText(url);
+    }
+</script>
+
+</html>

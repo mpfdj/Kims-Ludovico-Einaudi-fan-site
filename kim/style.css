@@ -6,10 +6,12 @@ html, body {
     color: white;
 }
 
-#navigationBar {
+#navigationBarContainer {
+    display: flex;
     background-color: black;
     height: 50px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigationBarLink {
